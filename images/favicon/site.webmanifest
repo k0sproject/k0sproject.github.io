@@ -1,0 +1,19 @@
+{
+    "name": "Pharos Web",
+    "short_name": "Pharos Web",
+    "icons": [
+        {
+            "src": "https://k8spharos.dev/images/favicon/android-chrome-192x192.png?v=OmKn4PGboX",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://k8spharos.dev/images/favicon/android-chrome-512x512.png?v=OmKn4PGboX",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}
