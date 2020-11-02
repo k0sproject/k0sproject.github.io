@@ -167,13 +167,13 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Kubernetes Kernel</span>
+          <span class="name">Kubernetes Version</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value">V1.17</span></li>
+              <li class=" "><span class="value">V1.19</span></li>
           </ul>
         </div>
       </div>
@@ -181,46 +181,14 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Supported Cluster Upgrade Strategies</span>
+          <span class="name">Container Runtime</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value">Rolling (zero-downtime)</span></li>
-              <li class=" "><span class="value">Instant</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-6">
-        <div class="feature-title">
-          <span class="name">Supported Infrastructure</span>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="feature-value">
-          <ul>
-              <li class=" "><span class="value">Private datacenter</span></li>
-              <li class=" "><span class="value">Public cloud</span></li>
-              <li class=" "><span class="value">Hybrid</span></li>
-              <li class=" "><span class="value">Edge</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-6">
-        <div class="feature-title">
-          <span class="name">Supported Machine Types</span>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="feature-value">
-          <ul>
-              <li class=" "><span class="value">Bare metal</span></li>
-              <li class=" "><span class="value">VM</span></li>
+              <li class=" "><span class="value">ContainerD (default)</span></li>
+              <li class=" "><span class="value">Custom</span></li>
           </ul>
         </div>
       </div>
@@ -243,16 +211,14 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Supported Host Operating Systems</span>
+          <span class="name">Supported Host OS</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value">CentOS</span></li>
-              <li class=" "><span class="value">Debian</span></li>
-              <li class=" "><span class="value">Redhat</span></li>
-              <li class=" "><span class="value">Ubuntu</span></li>
+              <li class=" "><span class="value">Linux (kernel v3.10 or newer)</span></li>
+              <li class=" "><span class="value">Windows Server 2019 (worker nodes)</span></li>
           </ul>
         </div>
       </div>
@@ -260,14 +226,13 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Supported Cluster Data Store Options</span>
+          <span class="name">Host OS Dependincies</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value">In-cluster elastic etcd with TLS</span></li>
-              <li class=" "><span class="value">External etcd with TLS</span></li>
+              <li class=" "><span class="value">none</span></li>
           </ul>
         </div>
       </div>
@@ -275,14 +240,16 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Supported Control Plane Availability Options</span>
+          <span class="name">Control Plane Storage Options</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value">Single master</span></li>
-              <li class=" "><span class="value">Multi-master</span></li>
+              <li class=" "><span class="value">In-Cluster Elastic Etcd with TLS (default)</span></li>
+              <li class=" "><span class="value">In-Cluster SQLite (non HA)</span></li>
+              <li class=" "><span class="value">External PostgreSQL</span></li>
+              <li class=" "><span class="value">External MySQL</span></li>              
           </ul>
         </div>
       </div>
@@ -290,66 +257,45 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Supported Container Runtimes</span>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="feature-value">
-          <ul>
-              <li class=" "><span class="value">Docker</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-6">
-        <div class="feature-title">
-          <span class="name">Supported CNI Plugins</span>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="feature-value">
-          <ul>
-              <li class=" "><span class="value">Weave</span></li>
-              <li class=" "><span class="value">Calico</span></li>
-              <li class=" "><span class="value">Custom</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-6">
-        <div class="feature-title">
-          <span class="name">Supported Storage Providers</span>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="feature-value">
-          <ul>
-              <li class="label-value "><span class="value">Public Cloud</span></li>
-              <li class=" "><span class="value">AWS</span></li>
-              <li class=" "><span class="value">GCP</span></li>
-              <li class=" "><span class="value">Azure</span></li>
-              <li class=" "><span class="value">Custom</span></li>
-              <li class="label-value "><span class="value">Private Cloud / On-Premises</span></li>
-              <li class=" "><span class="value">OpenStack</span></li>
-              <li class=" "><span class="value">VMWare VSphere</span></li>
-              <li class=" "><span class="value">Custom</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-6">
-        <div class="feature-title">
-          <span class="name">Built-In Security Conformance</span>
+          <span class="name">Built-In Security & Conformance</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
               <li class=" "><span class="value">CIS security benchmark</span></li>
-              <li class=" "><span class="value">NIST SP 800-190</span></li>
+              <li class=" "><span class="value">Certified Kubernetes</span></li>
+              <li class=" "><span class="value">FIPS 140-2</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row feature">
+      <div class="col-6">
+        <div class="feature-title">
+          <span class="name">Supported CNI Providers</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="feature-value">
+          <ul>
+              <li class=" "><span class="value">Calico (default)</span></li>
+              <li class=" "><span class="value">Custom</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row feature">
+      <div class="col-6">
+        <div class="feature-title">
+          <span class="name">Supported Storage / CSI Providers</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="feature-value">
+          <ul>
+              <li class=" "><span class="value">Kubernetes In-Tree Storage Providers</span></li>
+              <li class=" "><span class="value">Custom</span></li>
           </ul>
         </div>
       </div>
@@ -364,9 +310,11 @@
         <div class="feature-value">
           <ul>
               <li class=" "><span class="value">RBAC</span></li>
-              <li class=" "><span class="value">Pod security policies</span></li>
-              <li class=" "><span class="value">Network policies</span></li>
-              <li class=" "><span class="value">Cluster firewall (firewalld)</span></li>
+              <li class=" "><span class="value">Support OpenID Providers</span></li>
+              <li class=" "><span class="value">Pod Security Policies</span></li>
+              <li class=" "><span class="value">Network Policies</span></li>
+              <li class=" "><span class="value">Micro VM Runtimes</span></li>
+              <li class=" "><span class="value">Control Plane Isolation</span></li>
           </ul>
         </div>
       </div>
@@ -374,15 +322,18 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Built-In Networking Features</span>
+          <span class="name">Built-In Cluster Features</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class="label-value "><span class="value">Hybrid / Edge</span></li>
-              <li class=" "><span class="value">Intelligent Network Mesh</span></li>
-              <li class=" "><span class="value">Multi-cluster Networking</span></li>
+              <li class=" "><span class="value">DNS by CoreDNS</span></li>
+              <li class=" "><span class="value">Cluster Metrics by Metrics Server</span></li>
+              <li class=" "><span class="value">Horizontal Pod Autoscaling (HPA)</span></li>
+              <li class=" "><span class="value">GPU Support</span></li>
+              <li class=" "><span class="value">Zero-Downtime Cluster Upgrades</span></li>
+              <li class=" "><span class="value">Cluster Backup & Restore</span></li>
           </ul>
         </div>
       </div>
@@ -390,27 +341,14 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Built-In Applications Management Features</span>
+          <span class="name">Extensions</span>
         </div>
       </div>
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value">Helm</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row feature">
-      <div class="col-6">
-        <div class="feature-title">
-          <span class="name">Built-In Metrics</span>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="feature-value">
-          <ul>
-              <li class=" "><span class="value">Metrics Server</span></li>
+              <li class=" "><span class="value">Manifest Bundles</span></li>
+              <li class=" "><span class="value">Helm Charts</span></li>
           </ul>
         </div>
       </div>
