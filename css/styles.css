@@ -83,6 +83,11 @@ body, p {
 	text-align: center;
 }
 
+.k0s-typography {
+  font-family: "Menlo", "Consolas";
+  font-style: normal;
+}
+
 .li-space-lg li {
 	margin-bottom: 0.375rem;
 }

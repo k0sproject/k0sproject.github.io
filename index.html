@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>K0S | The Kubernetes Distribution</title>
+  <title>k0s | The Kubernetes Distribution</title>
 
   <meta name="description" content="K0S is the simple, solid & certified Kubernetes distribution that works on any infrastructure: public & private clouds, on-premises, edge & hybrid. It's 100% open source & free. Get started today!">
   <meta name="author" content="Mirantis">
@@ -64,7 +64,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
 
-  <a class="navbar-brand" href="index.html"><!-- <img src="images/k0s-logo.png" alt="alternative"> -->K0S <span>// THE KUBERNETES DISTRIBUTION</span></a>
+  <a class="navbar-brand" href="index.html"><img src="images/k0s-logo.svg" alt="alternative"> <i class="k0s-typography">k0s</i> <span>// THE KUBERNETES DISTRIBUTION</span></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -83,10 +83,10 @@
         <a class="nav-link page-scroll" href="#demo">DEMO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://docs.k0sproject.io">DOCS</a>
+        <a class="nav-link" href="https://github.com/k0sproject/k0s/tree/main/docs">DOCS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://docs.k0sproject.io/getting-started">GET STARTED</a>
+        <a class="nav-link" href="https://github.com/k0sproject/k0s/blob/main/docs/create-cluster.md">GET STARTED</a>
       </li>
     </ul>
     <span class="nav-item social-icons">
@@ -127,7 +127,7 @@
             <p class="p-large">The Simple, Solid & Certified Kubernetes Distribution</p>
             <h1>THE KUBERNETES <br>FOR <span id="js-rotating">PUBLIC CLOUD, PRIVATE CLOUD, HYBRID CLOUD, ON-PREMISES, BARE METAL, EDGE</span></h1>
             <p class="p-large">Deploy and run Kubernetes workloads at any scale on any infrastructure.<br/>All batteries included. 100% open source & free.</p>
-            <a class="btn-solid-lg" href="https://docs.k0sproject.io/getting-started"><i class="fas fa-external-link-alt"></i> Get Started</a>
+            <a class="btn-solid-lg" href="https://github.com/k0sproject/k0s/blob/main/docs/create-cluster.md"><i class="fas fa-external-link-alt"></i> Get Started</a>
           </div>
         </div> <!-- end of col -->
       </div>
@@ -140,16 +140,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h2>It's Complete.</h2>
-          <p>K0S is a <a href="https://landscape.cncf.io/category=certified-kubernetes-distribution&amp;format=card-mode&amp;grouping=category">Certified Kubernetes</a> with all batteries included. It is powered by the latest upstream version of Kubernetes kernel and include tools for cluster lifecycle management. K0S is everything you love about Kubernetes. Taken to the next level.</p>
+          <h2>Zero Friction</h2>
+          <p><span class="k0s-typography">k0s</span> drastically reduces the complexity of installing and running a fully conformant Kubernetes distribution. New kube clusters can be bootstrapped in minutes. Developer friction is reduced to zero, allowing anyone, with no special skills or expertise in Kubernetes to easily get started.</p>
         </div>
         <div class="col-md-4">
-          <h2>It's Secure.</h2>
-          <p>K0S clusters are ultra secure. The security is hardened following the <a href="https://csrc.nist.gov/publications/detail/sp/800-190/final">NIST recommendations</a> and releases passing <a href="https://www.cisecurity.org/benchmark/kubernetes/">CIS security benchmark</a>. In case of CVE, K0S clusters may be upgraded with no downtime once the fixes become available.</p>
+          <h2>Zero Deps</h2>
+          <p><span class="k0s-typography">k0s</span> is distributed as a single binary with no host OS dependencies besides the host OS kernel. It works with any operating system without additional software packages or configuration. Any security vulnerabilities or perf issues can be fixed directly in the <span class="k0s-typography">k0s</span> distribution.</p>
         </div>
         <div class="col-md-4">
-          <h2>It's Everywhere.</h2>
-          <p>K0S is a vendor neutral community driven Kubernetes that works on any infrastructure at any scale. It works flawlessly on public clouds, private clouds, hybrid clouds, on-premises, bare metal or at the edge, no problem!</p>
+          <h2>Zero Cost</h2>
+          <p><span class="k0s-typography">k0s</span> is completely free for personal or commercial use, and it always will be. The source code is available on <a href="https://github.com/k0sproject/k0s">Github</a> under Apache 2 license. It's a no brainer foundation for any Kubernetes projects and easy build upon.</p>
         </div>
       </div>
     </div> <!-- end of container -->
@@ -218,7 +218,7 @@
         <div class="feature-value">
           <ul>
               <li class=" "><span class="value">Linux (kernel v3.10 or newer)</span></li>
-              <li class=" "><span class="value">Windows Server 2019 (worker nodes)</span></li>
+              <li class=" "><span class="value">Windows Server 2019 (coming soon)</span></li>
           </ul>
         </div>
       </div>
@@ -226,7 +226,7 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Host OS Dependincies</span>
+          <span class="name">Host OS Dependendencies</span>
         </div>
       </div>
       <div class="col-6">
@@ -265,7 +265,7 @@
           <ul>
               <li class=" "><span class="value">CIS security benchmark</span></li>
               <li class=" "><span class="value">Certified Kubernetes</span></li>
-              <li class=" "><span class="value">FIPS 140-2</span></li>
+              <li class=" "><span class="value">FIPS 140-2 (coming soon)</span></li>
           </ul>
         </div>
       </div>
@@ -288,7 +288,7 @@
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
-          <span class="name">Supported Storage / CSI Providers</span>
+          <span class="name">Supported Storage & CSI Providers</span>
         </div>
       </div>
       <div class="col-6">
@@ -296,6 +296,20 @@
           <ul>
               <li class=" "><span class="value">Kubernetes In-Tree Storage Providers</span></li>
               <li class=" "><span class="value">Custom</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row feature">
+      <div class="col-6">
+        <div class="feature-title">
+          <span class="name">Supported Cloud Providers</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="feature-value">
+          <ul>
+              <li class=" "><span class="value">any (via extensions)</span></li>
           </ul>
         </div>
       </div>
@@ -313,7 +327,7 @@
               <li class=" "><span class="value">Support OpenID Providers</span></li>
               <li class=" "><span class="value">Pod Security Policies</span></li>
               <li class=" "><span class="value">Network Policies</span></li>
-              <li class=" "><span class="value">Micro VM Runtimes</span></li>
+              <li class=" "><span class="value">Micro VM Runtimes (coming soon)</span></li>
               <li class=" "><span class="value">Control Plane Isolation</span></li>
           </ul>
         </div>
@@ -332,8 +346,8 @@
               <li class=" "><span class="value">Cluster Metrics by Metrics Server</span></li>
               <li class=" "><span class="value">Horizontal Pod Autoscaling (HPA)</span></li>
               <li class=" "><span class="value">GPU Support</span></li>
-              <li class=" "><span class="value">Zero-Downtime Cluster Upgrades</span></li>
-              <li class=" "><span class="value">Cluster Backup & Restore</span></li>
+              <li class=" "><span class="value">Zero-Downtime Cluster Upgrades (coming soon)</span></li>
+              <li class=" "><span class="value">Cluster Backup & Restore (coming soon)</span></li>
           </ul>
         </div>
       </div>
@@ -362,7 +376,7 @@
       <div class="col-6">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value">Available on Github</span></li>
+              <li class=" "><span class="value">Available on <a href="https://github.com/k0sproject/k0s">Github</a></span></li>
           </ul>
         </div>
       </div>
@@ -376,7 +390,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h2>DEMO</h2>
-                    <div class="p-heading p-large">Lights, Camera, Action! The live demo of K0S cluster setup.</div>
+                    <div class="p-heading p-large">Lights, Camera, Action! The live demo of <span class="k0s-typography">k0s</span> cluster setup.</div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -398,14 +412,14 @@
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
                       <h2>Get Started</h2>
-                      <p class="p-large">K0S is the simple, solid & certified Kubernetes distribution that works on any infrastructure: public & private clouds, on-premises, edge & hybrid. It's 100% open source & free. Get started today!</p>
-                      <a class="btn-solid-lg" href="https://docs.k0sproject.io/getting-started"><i class="fas fa-external-link-alt"></i> Get Started</a>
+                      <p class="p-large"><span class="k0s-typography">k0s</span> is the simple, solid & certified Kubernetes distribution that works on any infrastructure: public & private clouds, on-premises, edge & hybrid. It's 100% open source & free. Get started today!</p>
+                      <a class="btn-solid-lg" href="https://github.com/k0sproject/k0s/blob/main/docs/create-cluster.md"><i class="fas fa-external-link-alt"></i> Get Started</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-7">
                     <div class="image-container">
                         <img class="img-fluid" src="images/lens.png" alt="alternative">
-                        <p class="image-caption">Screenshot of K0S cluster from <a href="https://k8slens.dev/">Lens</a></p>
+                        <p class="image-caption">Screenshot of <span class="k0s-typography">k0s</span> cluster from <a href="https://k8slens.dev/">Lens</a></p>
                     </div> <!-- end of img-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -418,8 +432,8 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>About K0S</h4>
-                        <p>K0S is the simple, solid & certified Kubernetes distribution that works on any infrastructure: public & private clouds, on-premises, edge & hybrid. It's 100% open source & free.</p>
+                        <h4>About <span class="k0s-typography">k0s</span></h4>
+                        <p><span class="k0s-typography">k0s</span> is the simple, solid & certified Kubernetes distribution that works on any infrastructure: public & private clouds, on-premises, edge & hybrid. It's 100% open source & free.</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
@@ -428,7 +442,7 @@
                         <ul class="list-unstyled li-space-lg">
                           <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://github.com/k0sproject/k0s#cluster-bootstrapping" class="primary">Get Started</a></div>
+                            <div class="media-body"><a href="https://github.com/k0sproject/k0s/blob/main/docs/create-cluster.md" class="primary">Get Started</a></div>
                           </li>
                           <li class="media">
                             <i class="fas fa-square"></i>
