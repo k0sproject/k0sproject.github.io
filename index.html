@@ -19,8 +19,9 @@
   <meta property="og:url" content="https://k0sproject.io/" />
 
   <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/asciinema-player.css" rel="stylesheet">
   <link href="css/fontawesome-all.css" rel="stylesheet">
@@ -70,10 +71,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <!-- end of preloader -->
 
+<!-- Above Navigation -->
+<div class="fixed-top-above navbar-custom ml-auto">
+  <div class="dropdown">
+  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Mirantis Open Source Projects
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-item" href="#">
+      <img src="https://a.storyblok.com/f/189401/25x24/6249fc5204/k0smotron_logo_inverted.svg" class="mr-3"/><p>k0smotron</p>
+    </div>
+    <div class="dropdown-item" href="#">
+      <img src="https://a.storyblok.com/f/189401/48x56/39eb540da5/lagoon-mark.png" class="mr-3"/><p>Lagoon</p>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end above navigation -->
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
 
-  <a class="navbar-brand" href="index.html"><img src="images/k0s-logo.svg" alt="alternative"> <i class="k0s-typography">k0s</i> <span>// THE KUBERNETES DISTRIBUTION</span></a>
+  <a class="navbar-brand" href="index.html">
+    <div>
+      <img src="images/k0s-logo-full-color.png" alt="alternative" style="margin-bottom:10px;max-width: 87px; height: auto;">
+    </div>
+    <div>
+      <p style="margin-bottom:0px;">Zero Friction Kubernetes</p>
+    </div>
+  </a>
+    
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -83,25 +111,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-link page-scroll" href="#header">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+        <a class="nav-link page-scroll" href="#features">Features</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#demo">DEMO</a>
+        <a class="nav-link page-scroll" href="#demo">Demo</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://docs.k0sproject.io" target="_blank">DOCS</a>
+        <a class="nav-link" href="https://docs.k0sproject.io" target="_blank">Docs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://docs.k0sproject.io/stable/install/" target="_blank">GET STARTED</a>
+        <a class="nav-link" href="https://docs.k0sproject.io/stable/install/" target="_blank">Get Started</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://medium.com/k0sproject" target="_blank">BLOG</a>
+        <a class="nav-link" href="https://medium.com/k0sproject" target="_blank">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link btn btn-sm btn-primary" href="contact-us.html">Contact Us</a>
+        <a class="nav-link" href="">Enterprise</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn btn-sm btn-primary" href="contact-us.html">CONTACT US</a>
       </li>
     </ul>
     <span class="nav-item social-icons">
@@ -109,12 +140,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://github.com/k0sproject/k0s">
           <i class="fas fa-circle fa-stack-2x"></i>
           <i class="fab fa-github fa-stack-1x"></i>
-        </a>
-      </span>
-      <span class="fa-stack">
-        <a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fab fa-slack fa-stack-1x"></i>
         </a>
       </span>
       <span class="fa-stack">
@@ -452,33 +477,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p><span class="k0s-typography">k0s</span> is the simple, solid & certified Kubernetes distribution that works on any infrastructure: bare-metal, on-premise, edge, IoT, public & private clouds. It's 100% open source & free.</p>
                     </div>
                 </div> <!-- end of col -->
-                <div class="col-md-4">
+                <div class="col-md-3 offset-md-1">
                     <div class="footer-col middle">
                         <h4>Resources</h4>
-                        <ul class="list-unstyled li-space-lg">
+                        <ul>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://docs.k0sproject.io/stable/install/" class="primary">Get Started</a></div>
+                            <div class="media-body"><a href="https://docs.k0sproject.io/stable/install/">Get Started</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://docs.k0sproject.io" class="primary">Documentation</a></div>
+                            <div class="media-body"><a href="https://docs.k0sproject.io">Documentation</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://github.com/k0sproject/k0s" class="primary">Source Code</a></div>
+                            <div class="media-body"><a href="https://github.com/k0sproject/k0s">Source Code</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://k0sproject.io/licenses/eula" class="primary">EULA</a></div>
+                            <div class="media-body"><a href="https://k0sproject.io/licenses/eula">EULA</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://www.mirantis.com/company/privacy-policy/" class="primary">Privacy Policy</a></div>
+                            <div class="media-body"><a href="https://www.mirantis.com/company/privacy-policy/">Privacy Policy</a></div>
                           </li>
                           <li class="media">
-                              <i class="fas fa-square"></i>
-                              <div class="media-body"><a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849" class="primary">Community Slack</a></div>
+                              <div class="media-body"><a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849">Community Slack</a></div>
                           </li>
                         </ul>
                     </div>
@@ -493,15 +512,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-slack fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
                             <a href="https://twitter.com/k0sproject">
+                                
+                                <!-- <i class="fab fa-twitter fa-stack-1x"></i> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                                 <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
                     </div>
@@ -517,7 +532,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2021 <a href="https://mirantis.com">Mirantis</a> - All rights reserved.</p>
+                    <p>Copyright © 2024 k0s contributors and <br> <a href="https://mirantis.com">Mirantis</a> - All rights reserved.</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
