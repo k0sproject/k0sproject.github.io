@@ -39,7 +39,7 @@ Colors:
 
 :root{
 	--primary-color: #1AAAFF;
-	--primary-color-lighten: #5fb1ef;
+	--primary-color-lighten: #1AAAFF;
 	--navbar-color: #000;
 	--super-dark-bg: url('../images/header-background.png') repeat;
 	--dark-bg: linear-gradient(
@@ -87,6 +87,7 @@ Colors:
   body, p {
 	  color: #f1f1f8;
 	  font: 400 16px "Overpass";
+	  line-height: 1.4;
   }
   
   .p-large {
@@ -97,6 +98,10 @@ Colors:
   .p-small {
 	  color: #f1f1f8;
 	  font: 400 0.75rem/1.25rem "Overpass";
+  }
+
+  .p-xsmall {
+	font-size: 12px !important;
   }
   
   .p-heading {
@@ -124,7 +129,7 @@ Colors:
   
   h2 {
 	  color: #f1f1f8;
-	  font: 700 2.25rem/2.75rem "Overpass";
+	  font: 800 24px "Overpass";
   }
   
   h3 {
@@ -148,13 +153,24 @@ Colors:
   }
   
   a {
-	  color: #f1f1f8;
-	  text-decoration: underline;
+		color: #f1f1f8;
+    	background-image: linear-gradient(transparent calc(100% - 0.08rem), white 2px);
+    	background-repeat: no-repeat;
+    	background-size: 0% 100%;
+    	transition: background-size 0s;
+    	text-decoration: underline;
+    	text-underline-offset: 5px;
+    	&:hover {
+      		background-size: 100% 100%;
+      		transition: background-size 1s;
+      		text-decoration: none;
+      		background-color: transparent;
+    	}
   }
   
   a:hover {
 	  color: #f1f1f8;
-	  text-decoration: underline;
+	  text-decoration: none;
   }
   
   a.primary {
@@ -734,6 +750,7 @@ Colors:
 				  width: 25px;
 			  }
 			  .dropdown-item {
+				background-image: none;
 				  &:hover {
 					  cursor: pointer;
 					  p {
@@ -758,6 +775,7 @@ Colors:
 	text-decoration: none;
 	font-size: 12px;
 	padding-top: 0px;
+	background-image: none;
   }
   
   .navbar-custom .navbar-brand span {
@@ -788,6 +806,7 @@ Colors:
 	  text-decoration: none;
 	  transition: all 0.2s ease;
 	  border: 1px solid transparent;
+	  background-image: none;
   }
   
   .navbar-custom .nav-item .nav-link:hover,
@@ -954,9 +973,7 @@ Colors:
 	}
 	a {
 		color: black;
-		&:hover {
-			text-decoration: none;
-		}
+		background-image: linear-gradient(transparent calc(100% - 0.08rem), black 2px);
 	}
   }
 
@@ -1033,6 +1050,11 @@ Colors:
   /************************/
   /*     05. Features     */
   /************************/
+  #features {
+	h2 {
+		font-size: 40px;
+	}
+  }
   .tabs {
 	  padding-top: 6.5rem;
 	  padding-bottom: 4.25rem;
@@ -1181,14 +1203,15 @@ Colors:
   /*     06. Video     */
   /*********************/
   .basic-1 {
-	  padding-top: 6.375rem;
-	  padding-bottom: 6.875rem;
-	  background: var(--dark-bg);
+	  padding-top: 120px;
+	  padding-bottom: 120px;
+	  background: linear-gradient(104deg, #000 25%, #32343B 67.88%);
   }
   
   .basic-1 h2 {
 	  margin-bottom: 1.125rem;
 	  text-align: center;
+	  font-size: 40px;
   }
   
   .basic-1 .p-heading {
@@ -1286,9 +1309,9 @@ Colors:
   /*     07. Details 1     */
   /*************************/
   .basic-3 {
-	  padding-top: 6.5rem;
-	  padding-bottom: 7.25rem;
-	  background: var(--light-dark-bg);
+	  padding-top: 120px;
+	  padding-bottom: 80px;
+	  background: linear-gradient(104deg, #000 25%, #32343B 67.88%);
   }
   
   .basic-3 h2{
@@ -1313,8 +1336,14 @@ Colors:
   }
   
   .basic-3 .feature{
-	border-bottom: 1px solid rgba(255,255,255,0.1);
-	padding: 20px 0;
+	padding: 40px 0;
+  }
+
+  .basic-3 hr {
+	width: 70%;
+	border-top: 1px solid #B3B6C3;
+	margin-top: 0px;
+	margin-bottom: 0px;
   }
   
   .basic-3 .feature:last-of-type {
@@ -1326,8 +1355,8 @@ Colors:
   }
   
   .basic-3 .feature .feature-title .name{
-	font-weight: 900;
-	color: rgba(255,255,255,0.85);
+	font-weight: 800;
+	color: white;
   }
   
   .basic-3 .feature .feature-value ul{
@@ -1336,13 +1365,21 @@ Colors:
 	list-style-type: none;
   }
   
-  .basic-3 .feature .feature-value ul li{
-	color: #b1b2b3;
-  }
-  
   .basic-3 .feature .feature-value ul li.label-value{
 	text-decoration: underline;
 	margin-top: 20px;
+  }
+
+  .basic-3 .feature .feature-value ul li{
+	margin-bottom: 8px;
+  }
+
+  .basic-3 .feature .feature-value ul li .value{
+	line-height: 1.4;
+  }
+
+  .basic-3 .feature .feature-value ul li:last-of-type{
+	margin-bottom: 0px;
   }
   
   .basic-3 .feature .feature-value ul li.label-value:first-of-type{
@@ -1476,18 +1513,22 @@ Colors:
   /*     11. Download     */
   /************************/
   .basic-4 {
-	  padding-top: 6.5rem;
-	  padding-bottom: 6.75rem;
-	background: linear-gradient(to right, #0b2c48, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	  padding-top: 40px;
+	  padding-bottom: 40px;
+	  background: var(--primary-color);
+	  h2, img {
+		display: inline;
+	  }
   }
   
   .basic-4 .text-container {
-	  margin-bottom: 3.5rem;
 	  text-align: center;
+	  padding: 0px;
   }
   
   .basic-4 h2 {
-	  margin-bottom: 1.25rem;
+	font-size: 24px;
+	color: black
   }
   
   .basic-4 .p-large {
@@ -1520,19 +1561,13 @@ Colors:
   /*     12. Overview       */
   /**************************/
   .overview {
-	  padding-top: 6.5rem;
-	  padding-bottom: 5.375rem;
-	  background: var(--dark-bg);
+	  padding: 120px 136px;
+	  background: linear-gradient(104deg, #000 25%, #32343B 67.88%);
 	  text-align: left;
   }
   
-  .overview a{
-	color: var(--primary-color);
-	text-decoration: none;
-  }
-  
   .overview p{
-	color: #b1b2b3;
+	color: white;
   }
   
   /**************************/
@@ -2158,20 +2193,6 @@ Colors:
 	  }
 	  /* end of screenshots */
   
-  
-	  /* Download */
-	  .basic-4 {
-		  padding-top: 6.75rem;
-	  }
-  
-	  .basic-4 .text-container {
-		  margin-top: 2rem;
-		  margin-bottom: 0;
-		  text-align: left;
-	  }
-	  /* end of download */
-  
-  
 	  /* Statistics */
 	  .counter {
 		  padding-top: 6rem;
@@ -2321,18 +2342,6 @@ Colors:
 		  margin-left: 2rem;
 	  }
 	  /* end of details 2 */
-  
-  
-	  /* Download */
-	  .basic-4 .text-container {
-		  margin-top: 5rem;
-	  }
-  
-	  .basic-4 .image-container {
-		  margin-left: 3rem;
-	  }
-	  /* end of download */
-  
   
 	  /* Footer */
 	  .footer .footer-col {
