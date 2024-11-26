@@ -83,32 +83,6 @@ Colors:
   /*     01. General Styles     */
   /******************************/
   
-  .btn-animated {
-	--ghostdark: #000;
-	--p: 10%;
-	--l: 10px;
-	text-transform: uppercase;
-    text-decoration: none;
-    padding: 9px 20px 5px 20px;
-    border-radius:20px;
-    font-weight: 900;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    transition: --cghostdark 0.7s, --p 0.5s, --l 0.5s;
-    background: linear-gradient(90deg, var(--cghostdark) var(--p), black);
-  }
-
-  .btn-animated:hover {
-	transition: --cghostdark 0.7s, --p 0.5s, --l 0.5s;
-	color: black;
-    --cghostdark: #fff;
-    --p:100%;
-    --l:100%;
-  }
- 
- 
- 
   body,
   html {
 	width: 100%;
@@ -218,6 +192,33 @@ Colors:
   
   .testimonial-author {
 	  font: 700 1rem/1.5rem "Overpass";
+  }
+
+  .btn-animated {
+	--ghostdark: #000;
+	--p: 10%;
+	--l: 10px;
+	text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 20px 5px 20px;
+    border-radius:20px;
+    font-weight: 900;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: --cghostdark 0.7s, --p 0.5s, --l 0.5s;
+    background: linear-gradient(90deg, var(--cghostdark) var(--p), black);
+	@media(max-width: 576px) {
+		width: 50vw;
+		margin-top: 16px;
+	}
+  }
+  .btn-animated:hover {
+	transition: --cghostdark 0.7s, --p 0.5s, --l 0.5s;
+	color: black;
+    --cghostdark: #fff;
+    --p:100%;
+    --l:100%;
   }
   
   .btn-solid-reg {
@@ -833,6 +834,10 @@ Colors:
   .navbar-custom .navbar-nav {
 	  margin-top: 0.75rem;
   }
+
+  .navbar-custom .nav-item {
+	padding-top : 5px;
+  }
   
   .navbar-custom .nav-item .nav-link {
 	  padding: 0 0.75rem 0 0.75rem;
@@ -1368,6 +1373,12 @@ Colors:
   .basic-3 .btn-solid-reg {
 	  margin-top: 0.5rem;
   }
+
+  .basic-3 img {
+	@media(max-width: 992px) {
+		max-width: 80vw;
+	}
+  }
   
   .basic-3 .feature{
 	padding: 40px 0;
@@ -1378,6 +1389,9 @@ Colors:
 	border-top: 1px solid #B3B6C3;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	@media(max-width: 768px) {
+		width: 100%;
+	}
   }
   
   .basic-3 .feature:last-of-type {
@@ -1387,6 +1401,13 @@ Colors:
   .basic-3 .feature .feature-title{
 	text-align: right;
   }
+  .basic-3 .source-code .feature-title {
+	@media(max-width: 768px) {
+		text-align: left;
+		margin-bottom: 12px;
+	}
+  }
+
   
   .basic-3 .feature .feature-title .name{
 	font-weight: 800;
@@ -1595,7 +1616,8 @@ Colors:
   /*     12. Overview       */
   /**************************/
   .overview {
-	  padding: 120px 136px;
+	  padding-top: 120px;
+	  padding-bottom: 120px;
 	  background: linear-gradient(104deg, #000 25%, #32343B 67.88%);
 	  text-align: left;
   }
