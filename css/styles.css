@@ -1,3 +1,24 @@
+@property --cghostdark {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: #000;
+  }
+  @property --c {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: #00FFF7;
+  }
+  @property --p {
+	syntax: '<percentage>';
+	inherits: false;
+	initial-value: 10%;
+  }
+  @property --l {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 10px;
+  }
+
 /* Template: Leno - Mobile App HTML Landing Page Template
    Author: Inovatik
    Created: Mar 2019
@@ -52,36 +73,46 @@ Colors:
 		rgba(255, 255, 255, 0.05)
 	  ),
 	  url('../images/header-background.png') repeat;
+	  
+	  
   }
   
-  /* @property --c {
-	  syntax: '<color>';
-	  inherits: false;
-	  initial-value: #00FFF7;
-	}
-	@property --p {
-	  syntax: '<percentage>';
-	  inherits: false;
-	  initial-value: 10%;
-	}
-	@property --l {
-	  syntax: '<length>';
-	  inherits: false;
-	  initial-value: 10px;
-	}
-	@property --cghostdark {
-	  syntax: '<color>';
-	  inherits: false;
-	  initial-value: #000;
-	} */
+  
   
   /******************************/
   /*     01. General Styles     */
   /******************************/
+  
+  .btn-animated {
+	--ghostdark: #000;
+	--p: 10%;
+	--l: 10px;
+	text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 20px 5px 20px;
+    border-radius:20px;
+    font-weight: 900;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: --cghostdark 0.7s, --p 0.5s, --l 0.5s;
+    background: linear-gradient(90deg, var(--cghostdark) var(--p), black);
+  }
+
+  .btn-animated:hover {
+	transition: --cghostdark 0.7s, --p 0.5s, --l 0.5s;
+	color: black;
+    --cghostdark: #fff;
+    --p:100%;
+    --l:100%;
+  }
+ 
+ 
+ 
   body,
   html {
 	width: 100%;
-	  height: 100%;
+	height: 100%;
   }
   
   body, p {
@@ -738,11 +769,11 @@ Colors:
 			  top: 30px !important;
 			  border: 1px solid #1AAAFF;
 			  border-radius: 0px;
-			  max-width: 160px;
+			  max-width: 170px;
 			  transform: none !important;
 			  will-change: unset !important;
-			  padding-top: 10px;
-			  padding-bottom: 10px;
+			  padding-top: 24px;
+			  padding-bottom: 24px;
 			  p, img {
 				  display: inline;
 			  }
@@ -757,6 +788,9 @@ Colors:
 						  text-decoration: underline;
 					  }
 				  }
+			  }
+			  .dropdown-item:first-of-type {
+				margin-bottom: 16px;
 			  }
 		  }
 	  }
@@ -942,7 +976,7 @@ Colors:
   }
   
   .header #js-rotating {
-	  color: #559fe4;
+	  color: var(--primary-color);
 	  min-height: 157.5px;
   }
   
@@ -1655,8 +1689,8 @@ Colors:
   /*     14. Footer     */
   /**********************/
   .footer {
-	  padding-top: 5rem;
-	  background: var(--super-dark-bg);
+	  padding-top: 120px;
+	  background: black;
 	  ul {
 		  padding-inline-start: 15px;
 	  }
@@ -1715,8 +1749,8 @@ Colors:
   /*************************/
   .copyright {
 	  padding-top: 1rem;
-	  padding-bottom: 0.5rem;
-	  background: var(--super-dark-bg);
+	  padding-bottom: 120px;
+	  background: black;
 	  text-align: center;
   }
   
