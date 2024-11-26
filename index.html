@@ -72,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- end of preloader -->
 
 <!-- Above Navigation -->
-<div class="fixed-top-above navbar-custom ml-auto">
+<div class="fixed-top-above navbar-custom ml-auto" style="border-bottom: 0px;">
   <div class="dropdown">
   <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Mirantis Open Source Projects
@@ -98,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <img src="images/k0s-logo-full-color.png" alt="alternative" style="margin-bottom:10px;max-width: 87px; height: auto;">
     </div>
     <div>
-      <p style="margin-bottom:0px;">Zero Friction Kubernetes</p>
+      <p style="margin-bottom:10px;">Zero Friction Kubernetes</p>
     </div>
   </a>
     
@@ -156,18 +156,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Header -->
 <header id="header" class="header">
-  <div id="particles"></div>
+  <!-- <div id="particles"></div> -->
   <div class="header-content">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
           <div class="text-container">
-            <p class="p-large">The Simple, Solid & Certified Kubernetes Distribution</p>
+            <p class="p-large" style="font-weight: 800;">The Simple, Solid & Certified Kubernetes Distribution</p>
             <h1>THE KUBERNETES <br>FOR <span id="js-rotating">PUBLIC CLOUD, PRIVATE CLOUD, HYBRID CLOUD, ON-PREMISES, BARE METAL, EDGE, IOT</span></h1>
-            <p class="p-large">Deploy and run Kubernetes workloads at any scale on any infrastructure.<br/>All batteries included. 100% open source & free.</p>
-            <a class="btn-solid-lg" href="https://docs.k0sproject.io/stable/install/" target="_blank"><i class="fas fa-external-link-alt"></i> Get Started</a>
+            <p style="font-weight: 800; margin-bottom: 16px;">( Pronounced "K-Zeroes")</p>
+            <p class="p-large">Deploy and run Kubernetes workloads at any scale on any infrastructure. <br> CNCF-certified, 100% open source & free.</p>
+            <!-- <a class="btn-solid-lg" href="https://docs.k0sproject.io/stable/install/" target="_blank"><i class="fas fa-external-link-alt"></i> Get Started</a> -->
           </div>
         </div> <!-- end of col -->
+        <div class="col-lg-6 blue-col">
+          <div class="text-container">
+            <p style="font-size: 40px;font-weight: 800;">GET STARTED</p>
+            <p class="p-large">k0s is the simple, solid & certified Kubernetes distribution that works on any infrastructure: bare-metal, on-premises, edge, IoT, public & private clouds. It's 100% open source & free.</p>
+            <div class="terminal">
+              <pre><code>$ curl -sSf https://get.k0s.sh | sudo sh</code></pre>
+              <pre><code>$ sudo k0s install controller --single</code></pre>
+              <pre><code>$ sudo k0s start # wait a minute</code></pre>
+              <pre><code>$ sudo k0s kubectl get nodes</code></pre>
+              <pre><code>NAME   STATUS   ROLES    AGE    VERSION</code></pre>
+              <pre><code>k0s    Ready    &lt;none&gt;   4m6s   v1.31.2+k0s</code></pre>
+            </div>
+            <p class="p-large">Visit the <a href="https://docs.k0sproject.io/stable/" target="_blank">k0s docs</a> for more!</p>
+          </div>
+        </div>
       </div>
     </div> <!-- end of container -->
   </div> <!-- end of header-content -->
@@ -473,7 +489,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>About <span class="k0s-typography">k0s</span></h4>
+                      <img src="images/k0s-logo-full-color.png" alt="alternative" style="margin-bottom:16px;max-width: 87px; height: auto;">
                         <p><span class="k0s-typography">k0s</span> is the simple, solid & certified Kubernetes distribution that works on any infrastructure: bare-metal, on-premise, edge, IoT, public & private clouds. It's 100% open source & free.</p>
                     </div>
                 </div> <!-- end of col -->
@@ -513,10 +529,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </span>
                         <span class="fa-stack">
                             <a href="https://twitter.com/k0sproject">
-                                
-                                <!-- <i class="fab fa-twitter fa-stack-1x"></i> -->
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                                 <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> -->
+                                
                             </a>
                         </span>
                     </div>

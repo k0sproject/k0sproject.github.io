@@ -751,6 +751,7 @@ Colors:
 	  box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	  font: 700 16px "Overpass";
 	  transition: all 0.2s ease;
+	  border-bottom: 1px solid #394867;
   }
   
   .navbar-custom .navbar-brand {
@@ -786,6 +787,7 @@ Colors:
 	  color: #fff;
 	  text-decoration: none;
 	  transition: all 0.2s ease;
+	  border: 1px solid transparent;
   }
   
   .navbar-custom .nav-item .nav-link:hover,
@@ -881,8 +883,21 @@ Colors:
   /*********************/
   .header {
 	position: relative;
-	background: var(--super-dark-bg);
+	background: linear-gradient(90deg, black 50%, var(--primary-color) 50%);
 	overflow: hidden;
+	@media(max-width: 992px) {
+		background: linear-gradient(180deg, black 50%, var(--primary-color) 50%);
+		.header-content {
+			padding-top: 9rem !important;
+			padding-bottom: 2rem !important;
+		}
+		h1 {
+			font-size: 40px !important;
+		}
+		.blue-col {
+			padding-top: 3rem;
+		}
+	}
   }
   
   .header #particles{
@@ -892,22 +907,24 @@ Colors:
   }
   
   .header .header-content {
-	  padding-top: 8.5rem;
+	  padding-top: 6rem;
 	  padding-bottom: 7rem;
-	  text-align: center;
   }
   
   .header .text-container {
-	text-align: center;
 	  margin-bottom: 3rem;
   }
   
   .header h1 {
 	  margin-bottom: 2rem;
+	  font-size: 70px;
+	  height: 17rem;
+	  line-height: 70.4px;
   }
   
   .header #js-rotating {
 	  color: #559fe4;
+	  min-height: 157.5px;
   }
   
   .header .p-large {
@@ -929,6 +946,27 @@ Colors:
 	font-size: 30px;
 	margin-left: 10px;
 	color: rgba(255,255,255,0.5);
+  }
+
+  .header .blue-col {
+	p {
+		color: black;
+	}
+	a {
+		color: black;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+  }
+
+  .header .terminal {
+	background-color: black;
+	padding: 24px;
+	margin-bottom: 32px;
+	code {
+		color: white;
+	}
   }
   
   /****************************/
@@ -1605,6 +1643,7 @@ Colors:
   
   .footer .media {
 	  display: list-item;
+	  margin-bottom: 8px;
   }
   
   .footer .media-body {
@@ -1786,6 +1825,7 @@ Colors:
 	  .navbar-custom .nav-item .nav-link {
 		  padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 		  color: #fff;
+
 	  }
   
 	  .navbar-custom .nav-item .nav-link:hover,
@@ -1829,7 +1869,7 @@ Colors:
   
 	  /* Header */
 	  .header .header-content {
-		  padding-top: 11rem;
+		  /* padding-top: 11rem; */
 	  }
 	  /* end of header */
   
@@ -1980,7 +2020,7 @@ Colors:
 	  .navbar-custom .fa-stack {
 		  margin-bottom: 0.1875rem;
 		  margin-left: 0.375rem;
-		  font-size: 0.75rem;
+		  font-size: 1rem;
 	  }
   
 	  .navbar-custom .fa-stack-2x {
@@ -2012,8 +2052,8 @@ Colors:
   
 	  /* Header */
 	  .header .header-content {
-		  padding-top: 13rem;
-		  padding-bottom: 10rem;
+		  /* padding-top: 13rem;
+		  padding-bottom: 10rem; */
 		  text-align: left;
 	  }
   
