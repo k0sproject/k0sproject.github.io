@@ -770,13 +770,16 @@ Colors:
   .navbar-custom .navbar-brand p {
 	font-size: 14px;
 	margin-bottom: 0px;
+	display: inline;
   }
   
   .navbar-custom .navbar-brand img {
-	height: 40px;
-	margin-bottom: 1px;
-	margin-right: 5px;
-	  backface-visibility: hidden;
+	height: auto;
+	max-width: 87px;
+	display: inline;
+	margin-bottom: 10px;
+	margin-right: 24px;
+	backface-visibility: hidden;
   }
   
   .navbar-custom .navbar-brand.logo-text {
@@ -920,7 +923,7 @@ Colors:
   }
   
   .header .header-content {
-	  padding-top: 4rem;
+	  padding-top: 2rem;
 	  padding-bottom: 6rem;
   }
   
@@ -2075,7 +2078,7 @@ Colors:
 	  }
   
 	  .navbar-custom .fa-stack-1x {
-		  color: #fff;
+		  color: black;
 		  transition: all 0.2s ease;
 	  }
   
