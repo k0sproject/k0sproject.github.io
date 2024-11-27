@@ -19,8 +19,9 @@
   <meta property="og:url" content="https://k0sproject.io/" />
 
   <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/asciinema-player.css" rel="stylesheet">
   <link href="css/fontawesome-all.css" rel="stylesheet">
@@ -70,10 +71,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <!-- end of preloader -->
 
+<!-- Above Navigation -->
+<div class="fixed-top-above navbar-custom ml-auto" style="border-bottom: 0px;">
+  <div class="dropdown">
+  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 12px;">
+    Mirantis Open Source Projects
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="https://k0smotron.io/" target="_blank">
+      <img src="https://a.storyblok.com/f/189401/25x24/6249fc5204/k0smotron_logo_inverted.svg" class="mr-3"/><p>k0smotron</p>
+    </a>
+    <a class="dropdown-item" href="https://www.mirantis.com/software/amazee-io" target="_blank">
+      <img src="https://a.storyblok.com/f/189401/48x56/39eb540da5/lagoon-mark.png" class="mr-3"/><p>Lagoon</p>
+    </a>
+  </div>
+</div>
+</div>
+<!-- end above navigation -->
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
 
-  <a class="navbar-brand" href="index.html"><img src="images/k0s-logo.svg" alt="alternative"> <i class="k0s-typography">k0s</i> <span>// THE KUBERNETES DISTRIBUTION</span></a>
+  <a class="navbar-brand" href="index.html">
+    <div>
+      <img src="images/k0s-logo-full-color.png" alt="alternative">
+      <p>Zero Friction Kubernetes</p>
+    </div>
+  </a>
+    
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-awesome fas fa-bars"></span>
@@ -83,42 +109,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="https://docs.k0sproject.io" target="_blank">Docs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+        <a class="nav-link" href="https://medium.com/k0sproject" target="_blank">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link page-scroll" href="#demo">DEMO</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://docs.k0sproject.io" target="_blank">DOCS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://docs.k0sproject.io/stable/install/" target="_blank">GET STARTED</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://medium.com/k0sproject" target="_blank">BLOG</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link btn btn-sm btn-primary" href="contact-us.html">Contact Us</a>
+        <a class="nav-link" href="https://www.mirantis.com/software/k0s/" target="_blank">Support</a>
       </li>
     </ul>
     <span class="nav-item social-icons">
       <span class="fa-stack">
-        <a href="https://github.com/k0sproject/k0s">
+        <a href="https://github.com/k0sproject/k0s" target="_blank">
           <i class="fas fa-circle fa-stack-2x"></i>
           <i class="fab fa-github fa-stack-1x"></i>
         </a>
       </span>
       <span class="fa-stack">
-        <a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849">
-          <i class="fas fa-circle fa-stack-2x"></i>
-          <i class="fab fa-slack fa-stack-1x"></i>
-        </a>
-      </span>
-      <span class="fa-stack">
-        <a href="https://twitter.com/k0sproject">
+        <a href="https://twitter.com/k0sproject" target="_blank">
           <i class="fas fa-circle fa-stack-2x"></i>
           <i class="fab fa-twitter fa-stack-1x"></i>
         </a>
@@ -131,53 +139,77 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Header -->
 <header id="header" class="header">
-  <div id="particles"></div>
+  <!-- <div id="particles"></div> -->
   <div class="header-content">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-6">
           <div class="text-container">
-            <p class="p-large">The Simple, Solid & Certified Kubernetes Distribution</p>
+            <p class="p-large" style="font-weight: 800;">The Simple, Solid & Certified Kubernetes Distribution</p>
             <h1>THE KUBERNETES <br>FOR <span id="js-rotating">PUBLIC CLOUD, PRIVATE CLOUD, HYBRID CLOUD, ON-PREMISES, BARE METAL, EDGE, IOT</span></h1>
-            <p class="p-large">Deploy and run Kubernetes workloads at any scale on any infrastructure.<br/>All batteries included. 100% open source & free.</p>
-            <a class="btn-solid-lg" href="https://docs.k0sproject.io/stable/install/" target="_blank"><i class="fas fa-external-link-alt"></i> Get Started</a>
+            <p style="font-weight: 800; margin-bottom: 16px;">( Pronounced "K-Zeroes")</p>
+            <p class="p-large">Deploy and run Kubernetes workloads at any scale on any infrastructure. CNCF-certified, 100% open source & free.</p>
+            <!-- <a class="btn-solid-lg" href="https://docs.k0sproject.io/stable/install/" target="_blank"><i class="fas fa-external-link-alt"></i> Get Started</a> -->
           </div>
         </div> <!-- end of col -->
+        <div class="col-lg-6 blue-col">
+          <div class="text-container">
+            <p style="font-size: 40px;font-weight: 800;">GET STARTED</p>
+            <p class="p-large">k0s is the simple, solid & certified Kubernetes distribution that works on any infrastructure: bare-metal, on-premises, edge, IoT, public & private clouds. It's 100% open source & free.</p>
+            <div class="terminal">
+              <pre><code>$ curl -sSf https://get.k0s.sh | sudo sh</code></pre>
+              <pre><code>$ sudo k0s install controller --single</code></pre>
+              <pre><code>$ sudo k0s start # wait a minute</code></pre>
+              <pre><code>$ sudo k0s kubectl get nodes</code></pre>
+              <pre><code>NAME   STATUS   ROLES    AGE    VERSION</code></pre>
+              <pre><code>k0s    Ready    &lt;none&gt;   4m6s   v1.31.2+k0s</code></pre>
+            </div>
+            <p class="p-large">Visit the <a href="https://docs.k0sproject.io/stable/" target="_blank">k0s docs</a> for more!</p>
+          </div>
+        </div>
       </div>
     </div> <!-- end of container -->
   </div> <!-- end of header-content -->
 </header> <!-- end of header -->
 <!-- end of header -->
 
+<!-- Overview -->
 <div id="overview" class="overview">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
           <h2>Zero Friction</h2>
-          <p><span class="k0s-typography">k0s</span> drastically reduces the complexity of installing and running a fully conformant Kubernetes distribution. New kube clusters can be bootstrapped in minutes. Developer friction is reduced to zero, allowing anyone, with no special skills or expertise in Kubernetes to easily get started.</p>
+          <p><span class="k0s-typography">k0s</span> drastically reduces the complexity of installing and running a fully conformant, CNCF-certified Kubernetes distribution. New kube clusters can be bootstrapped in minutes. Developer friction is reduced to zero, allowing anyone to easily get started. No special skills or expertise in Kubernetes required.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pt-5 pt-md-0">
           <h2>Zero Deps</h2>
-          <p><span class="k0s-typography">k0s</span> is distributed as a single binary with zero host OS dependencies besides the host OS kernel. It works with any operating system without additional software packages or configuration. Any security vulnerabilities or performance issues can be fixed directly in the <span class="k0s-typography">k0s</span> distribution.</p>
+          <p><span class="k0s-typography">k0s</span> is distributed as a single binary with zero host OS dependencies besides the host OS kernel. It works with any operating system without additional software packages or configuration. Any security vulnerabilities or performance issues encountered are fixed directly in the <span class="k0s-typography">k0s</span> distribution, vastly easing the toil of managing infrastructure to host Kubernetes.</p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 pt-5 pt-md-0">
           <h2>Zero Cost</h2>
-          <p><span class="k0s-typography">k0s</span> is completely free for personal or commercial use, and it always will be. The source code is available on <a href="https://github.com/k0sproject/k0s">GitHub</a> under Apache 2 license. It's a no brainer foundation for any Kubernetes projects and easy build upon.</p>
+          <p><span class="k0s-typography">k0s</span> is completely free for personal or commercial use, and it always will be. The source code is available on <a href="https://github.com/k0sproject/k0s">GitHub</a> under the Apache 2 license. <span class="k0s-typography">k0s</span> is an excellent foundation for any Kubernetes projects and easy to build upon.</p>
         </div>
       </div>
     </div> <!-- end of container -->
 </div> <!-- end of counter -->
+<!-- end of overview -->
 
 <!-- Features -->
 <div id="features" class="basic-3">
   <div class="container">
-    <div class="row">
+    <div class="row text-center">
       <div class="col-lg-12">
-          <h2>FEATURES</h2>
-          <div class="p-heading p-large">Deploy and run Kubernetes workloads at any scale on any infrastructure. All batteries included.</div>
+          <img src="https://a.storyblok.com/f/189401/712x434/2f5d4bf9ff/lens-screenshot.svg" alt="lens-screenshot" class="pb-4">
+          <p class="pb-5 p-xsmall">Screenshot of <span class="k0s-typography">k0s</span> cluster from <a href="https://k8slens.dev/" target="_blank">Lens</a></p>
       </div>
     </div>
-    <div class="row feature">
+    <div class="row py-5">
+      <div class="col-lg-12 text-center">
+          <h2 id="features-scroll">FEATURES</h2>
+          <div class="p-large">Deploy and run Kubernetes workloads at any scale on any infrastructure. All batteries included.</div>
+      </div>
+    </div>
+    <div class="row feature pt-5">
       <div class="col-6">
         <div class="feature-title">
           <span class="name">Kubernetes Versions</span>
@@ -187,12 +219,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="feature-value">
           <ul>
               <li class=" "><span class="value">v1.31</span></li>
-              <li class=" "><span class="value">v1.30</span></li>
               <li class=" "><span class="value">v1.29</span></li>
+              <li class=" "><span class="value">v1.28</span></li>
           </ul>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -203,11 +236,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="feature-value">
           <ul>
               <li class=" "><span class="value">containerd (default)</span></li>
-              <li class=" "><span class="value font-italic">Bring your own</span></li>
+              <li class=" "><span class="value">Bring your own</span></li>
           </ul>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -224,6 +258,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -239,6 +274,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -256,6 +292,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -272,6 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -288,6 +326,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -302,6 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -316,6 +356,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -335,6 +376,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -354,6 +396,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -369,6 +412,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
+    <hr>
     <div class="row feature">
       <div class="col-6">
         <div class="feature-title">
@@ -383,16 +427,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </div>
-    <div class="row feature">
-      <div class="col-6">
+    <hr>
+    <div class="row pt-5 mt-5">
+      <div class="col-lg-12 text-center pt-5">
+          <h2>Projects that use k0s</h2>
+      </div>
+    </div>
+    <div class="row feature source-code pt-5">
+      <div class="col-12 col-md-6">
         <div class="feature-title">
-          <span class="name">Cluster Fleet management</span>
+          <span class="name">Basic Cluster Fleet management</span>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-md-4">
         <div class="feature-value">
           <ul>
-              <li class=" "><span class="value"><a target="_blank" href="https://k0smotron.io">k0smotron</a> is a <a href="https://cluster-api.sigs.k8s.io/" target="_blank">Cluster API</a> compliant provider to manage a fleet of k0s clusters.</span></li>
+              <li class=" "><span class="value"><a href="https://k0smotron.io/">k0smotron</a> is an open source <a href="https://cluster-api.sigs.k8s.io/">Cluster API</a>- compliant provider to manage a fleet of k0s clusters.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row feature source-code">
+      <div class="col-12 col-md-6">
+        <div class="feature-title">
+          <span class="name">Composable Enterprise Kubernetes</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="feature-value">
+          <ul>
+              <li class=" "><span class="value">MKE 4 is an open source, declaratively-managed, fully composable, highly-automated enterprise Kubernetes platform based on k0s.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row feature source-code">
+      <div class="col-12 offset-0 offset-md-2 col-md-4">
+        <div class="feature-title">
+          <span class="name">Enterprise Hybrid/Multi-Cloud Kubernetes Platform Fleet management</span>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="feature-value">
+          <ul>
+              <li class=" "><span class="value">k0rdent is open source, Kubernetes-native, declarative, composable Kubernetes platform fleet manager that leverages ClusterAPI to deliver and automate Kubernetes on any infrastructure – bare metal, private cloud, public cloud, and edge – from a single point of control. Distribution-agnostic, k0rdent is an excellent solution for composing and managing k0s-based platforms at scale.</span></li>
           </ul>
         </div>
       </div>
@@ -400,85 +480,71 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div> <!-- end of features -->
 
-    <!-- Video -->
-    <div id="demo" class="basic-1">
+<!-- Video -->
+<div id="demo" class="basic-1">
+  <div class="container">
+    <div class="row" >
+      <div class="col-lg-12">
+        <h2 id="demo-scroll">DEMO</h2>
+        <div class="p-heading p-large">Lights, Camera, Action! The live demo of <span class="k0s-typography">k0s</span> cluster setup.</div>
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    <div class="row">
+      <div class="col-lg-12">
+        <dic class="video-wrapper">
+          <asciinema-player src="videos/k0s_demo.cast" cols="120" rows="37"></asciinema-player>
+        </dic>
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</div> <!-- end of basic-1 -->
+<!-- end of video -->
+
+<!-- Download -->
+<div id="download" class="basic-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>DEMO</h2>
-                    <div class="p-heading p-large">Lights, Camera, Action! The live demo of <span class="k0s-typography">k0s</span> cluster setup.</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <dic class="video-wrapper">
-                      <asciinema-player src="videos/k0s_demo.cast" cols="120" rows="37"></asciinema-player>
-                    </dic>
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of video -->
-
-    <div id="download" class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                      <h2>Get Started</h2>
-                      <p class="p-large"><span class="k0s-typography">k0s</span> is the simple, solid & certified Kubernetes distribution that works on any infrastructure: bare-metal, on-premises, edge, IoT, public & private clouds. It's 100% open source & free. Get started today!</p>
-                      <a class="btn-solid-lg" href="https://docs.k0sproject.io/stable/install/" target="_blank"><i class="fas fa-external-link-alt"></i> Get Started</a>
+                      <h2 class="align-middle">Originated by</h2><img src="images/mirantis-logo-horizontal-inverted-one-color.svg" class="align-middle pl-2" />
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/lens.png" alt="alternative">
-                        <p class="image-caption">Screenshot of <span class="k0s-typography">k0s</span> cluster from <a href="https://k8slens.dev/">Lens</a></p>
-                    </div> <!-- end of img-container -->
-                </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div>
+</div>
+<!-- end of download -->
 
-    <!-- Footer -->
-    <div class="footer">
+<!-- Footer -->
+<div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>About <span class="k0s-typography">k0s</span></h4>
+                      <img src="images/k0s-logo-full-color.png" alt="alternative" style="margin-bottom:16px;max-width: 87px; height: auto;">
                         <p><span class="k0s-typography">k0s</span> is the simple, solid & certified Kubernetes distribution that works on any infrastructure: bare-metal, on-premise, edge, IoT, public & private clouds. It's 100% open source & free.</p>
                     </div>
                 </div> <!-- end of col -->
-                <div class="col-md-4">
+                <div class="col-md-3 offset-md-1">
                     <div class="footer-col middle">
                         <h4>Resources</h4>
-                        <ul class="list-unstyled li-space-lg">
+                        <ul>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://docs.k0sproject.io/stable/install/" class="primary">Get Started</a></div>
+                            <div class="media-body"><a href="https://docs.k0sproject.io/stable/install/">Get Started</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://docs.k0sproject.io" class="primary">Documentation</a></div>
+                            <div class="media-body"><a href="https://docs.k0sproject.io">Documentation</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://github.com/k0sproject/k0s" class="primary">Source Code</a></div>
+                            <div class="media-body"><a href="https://github.com/k0sproject/k0s">Source Code</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://k0sproject.io/licenses/eula" class="primary">EULA</a></div>
+                            <div class="media-body"><a href="https://k0sproject.io/licenses/eula">EULA</a></div>
                           </li>
                           <li class="media">
-                            <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="https://www.mirantis.com/company/privacy-policy/" class="primary">Privacy Policy</a></div>
+                            <div class="media-body"><a href="https://www.mirantis.com/company/privacy-policy/">Privacy Policy</a></div>
                           </li>
                           <li class="media">
-                              <i class="fas fa-square"></i>
-                              <div class="media-body"><a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849" class="primary">Community Slack</a></div>
+                              <div class="media-body"><a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849">Community Slack</a></div>
                           </li>
                         </ul>
                     </div>
@@ -487,42 +553,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="footer-col last">
                         <h4>Community</h4>
                         <span class="fa-stack">
-                            <a href="https://github.com/k0sproject/k0s">
+                            <a href="https://github.com/k0sproject/k0s" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-github fa-stack-1x"></i>
                             </a>
                         </span>
                         <span class="fa-stack">
-                            <a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-slack fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://twitter.com/k0sproject">
+                            <a href="https://twitter.com/k0sproject" target="_blank">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.<path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg> -->
+                                
                             </a>
                         </span>
                     </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->
-    <!-- end of footer -->
+</div> 
+<!-- end of footer -->
 
 
-    <!-- Copyright -->
-    <div class="copyright">
+<!-- Copyright -->
+<div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2021 <a href="https://mirantis.com">Mirantis</a> - All rights reserved.</p>
+                    <p>Copyright © 2024 k0s contributors and <br> <a href="https://mirantis.com">Mirantis</a> - All rights reserved.</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
-    <!-- end of copyright -->
+</div> 
+<!-- end of copyright -->
+
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
