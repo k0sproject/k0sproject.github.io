@@ -40,6 +40,7 @@ Colors:
 :root{
 	--primary-color: #1AAAFF;
 	--primary-color-lighten: #1AAAFF;
+	--primary-gradient: linear-gradient(90deg, #1DA7FD 0%, #08F5DA 100%);
 	--navbar-color: #000;
 	--super-dark-bg: url('../images/header-background.png') repeat;
 	--dark-bg: linear-gradient(
@@ -899,10 +900,16 @@ Colors:
   /*********************/
   .header {
 	position: relative;
-	background: linear-gradient(90deg, black 50%, var(--primary-color) 50%);
+	background: linear-gradient(to right, black, black), url('../images/aqua-blue-gradient-bg.png');
+	background-position-x: 0%, 50%;
+	background-size: 50% 100%, 100% 100%;
+	background-repeat: no-repeat, no-repeat;
 	overflow: hidden;
 	@media(max-width: 992px) {
-		background: linear-gradient(180deg, black 50%, var(--primary-color) 50%);
+		background: linear-gradient(to right, black, black), url('../images/aqua-blue-gradient-bg.png');
+		background-position-y: 0%, 50%;
+		background-size: 100% 50%, 100% 100%;
+		background-repeat: no-repeat, no-repeat;
 		.header-content {
 			padding-top: 9rem !important;
 			padding-bottom: 2rem !important;
@@ -1528,7 +1535,7 @@ Colors:
   .basic-4 {
 	  padding-top: 40px;
 	  padding-bottom: 40px;
-	  background: var(--primary-color);
+	  background: linear-gradient(90deg, #1DA7FD 0%, #08F5DA 100%);
 	  h2, img {
 		display: inline;
 	  }
@@ -1732,6 +1739,10 @@ Colors:
 	  padding-bottom: 120px;
 	  background: black;
 	  text-align: center;
+	  border-bottom-style: solid;
+	  border-bottom-width: 10px;
+	  border-image: linear-gradient(90deg, #1DA7FD, #08F5DA);
+      border-image-slice: 1;
   }
   
   .copyright .p-small {
