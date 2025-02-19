@@ -6,9 +6,9 @@
 
   <title>k0s | Kubernetes distribution for bare-metal, on-prem, edge, IoT</title>
 
+  <meta name="author" content="k0s contributors, Originated by Mirantis">
   <meta name="description" content="k0s is the simple, solid & certified Kubernetes distribution that works on any infrastructure: bare-metal, on-premise, edge, IoT devices, public & private clouds. It's 100% open source & free. k0s is easy to install with a single binary and scales well from a single node development environment to a very large production cluster. The deployment is flexible due to zero dependencies and control plane isolation.">
-  <meta name="author" content="Mirantis">
-  <meta name="keywords" content="k0s, kos, kubernetes, bare-metal, on-premise, edge, iot, private cloud, public cloud, lightweight, single binary, control plane isolation, open source, cloud native, containers, docker, distribution, cluster, mirantis">
+  <meta name="keywords" content="k0s, kos, kubernetes, bare-metal, on-premise, edge, iot, private cloud, public cloud, lightweight, single binary, control plane isolation, open source, cloud native, containers, docker, distribution, cluster">
   <meta name="language" content="english">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -51,33 +51,10 @@
 </div>
 <!-- end of preloader -->
 
-<!-- Above Navigation -->
-<div class="fixed-top-above navbar-custom ml-auto" style="border-bottom: 0px;">
-  <div class="dropdown">
-  <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size: 12px;">
-    Mirantis Open Source Projects
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="https://k0rdent.io/" target="_blank" style="margin-bottom:0px;">
-      <img src="https://a.storyblok.com/f/189401/25x15/420634c36e/k0rdent-logo-mark-inverted.svg" class="mr-3"/><p>k0rdent</p>
-    </a>
-    <a class="dropdown-item" href="https://k0smotron.io/" target="_blank">
-      <img src="https://a.storyblok.com/f/189401/191x181/8a25fc0e46/k0smotron-logo-mark-inverted.svg" class="mr-3"/><p>k0smotron</p>
-    </a>
-    <a class="dropdown-item" href="https://www.mirantis.com/software/amazee-io" target="_blank">
-      <img src="https://a.storyblok.com/f/189401/48x56/39eb540da5/lagoon-mark.png" class="mr-3"/><p>Lagoon</p>
-    </a>
-    <a class="dropdown-item" href="https://www.mirantis.com/open-source/" target="_blank">
-      <p>View All Projects</p>
-    </a>
-  </div>
-</div>
-</div>
-<!-- end above navigation -->
 
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+<nav class="fixed-top-above navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
 
   <a class="navbar-brand" href="index.html">
     <div>
@@ -101,7 +78,7 @@
         <a class="nav-link" href="https://medium.com/k0sproject" target="_blank">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.mirantis.com/software/k0s/" target="_blank">Support</a>
+        <a class="nav-link" href="#support">Support</a>
       </li>
     </ul>
     <span class="nav-item social-icons">
@@ -487,13 +464,38 @@
 </div> <!-- end of basic-1 -->
 <!-- end of video -->
 
+<!-- Support -->
+<div id="support" class="basic-1">
+  <div class="container">
+    <div class="row" >
+      <div class="col-lg-12">
+        <h2 id="demo-scroll">Support</h2>
+        <div class="p-heading p-large">Following organizations provide enterprise support for <span class="k0s-typography">k0s</span> clusters.</div>
+      </div> <!-- end of col -->
+    </div> <!-- end of row -->
+    <div class="row feature">
+      <div class="col-6">
+        <div class="feature-title">
+          <span class="name"><a href="https://www.mirantis.com/software/k0s/">Mirantis</a></span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="feature-value">
+          Mirantis provides enterprise support for k0s, ranging from LabCare (8x5/M-F) to ProdCare (24x7) with SLAs. Mirantis also offers training, consulting, and professional services for k0s clusters.
+        </div>
+      </div>
+    </div>
+    <hr>
+</div>
+<!-- end of Support -->
+
 <!-- Download -->
 <div id="download" class="basic-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-container">
-                      <h2 class="align-middle">Originated by</h2><img src="images/mirantis-logo-horizontal-inverted-one-color.svg" class="align-middle pl-2" />
+                      <h2 class="align-middle">Originated by</h2><a href="https://mirantis.com" target="_blank"><img src="images/mirantis-logo-horizontal-inverted-one-color.svg" class="align-middle pl-2" /></a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -523,9 +525,6 @@
                           </li>
                           <li class="media">
                             <div class="media-body"><a href="https://github.com/k0sproject/k0s">Source Code</a></div>
-                          </li>
-                          <li class="media">
-                            <div class="media-body"><a href="https://www.mirantis.com/company/privacy-policy/">Privacy Policy</a></div>
                           </li>
                           <li class="media">
                               <div class="media-body"><a href="https://kubernetes.slack.com/archives/C0809EA06QZ/p1730993027457849">Community Slack</a></div>
@@ -561,11 +560,18 @@
 <!-- Copyright -->
 <div class="copyright">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright © 2025 k0s contributors and <br> <a href="https://mirantis.com">Mirantis</a> - All rights reserved.</p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
+          <div class="row">
+              <div class="col-lg-12">
+                <p>We are a <a href="https://cncf.io/">CNCF</a> sandbox project</p>
+                <p></p>
+              </div> <!-- end of col -->
+          </div> <!-- enf of row -->
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>Copyright © k0sproject a Series of LF Projects, LLC</p>
+                  <p>For website terms of use, trademark policy and other project policies please see the <a href="https://lfprojects.org/policies/" target="_blank">Linux Foundation policies</a>.</p>
+              </div> <!-- end of col -->
+          </div> <!-- enf of row -->
         </div> <!-- end of container -->
 </div>
 <!-- end of copyright -->
