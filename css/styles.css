@@ -4,6 +4,22 @@
    Description: Master CSS file
 */
 
+@property --p {
+	syntax: '<percentage>';
+	inherits: false;
+	initial-value: 10%;
+  }
+  @property --l {
+	syntax: '<length>';
+	inherits: false;
+	initial-value: 10px;
+  }
+  @property --cblue {
+	syntax: '<color>';
+	inherits: false;
+	initial-value: #1AAAFF;
+  }
+  
 /*****************************************
 Table Of Contents:
 
@@ -2449,4 +2465,61 @@ Colors:
 		  height: 946px;
 	  }
   
+  }
+
+
+  .error-content {
+	position: relative;
+	background: linear-gradient(to right, black, black), url('../images/lost-in-space.png');
+	background-position-y: 0%, 0%;
+	background-position-x: 0%, 100%;
+	background-size: 60%, 50%;
+	background-repeat: no-repeat, no-repeat;
+	overflow: hidden;
+	.row {
+		margin-top: 7rem;
+		padding: 200px 0px;
+		h1 {
+			font-size: 77px;
+			line-height: 70.4px;
+			margin-bottom: 24px;
+		}
+		h2 {
+			font-size: 40px;
+			margin-bottom: 40px;
+		}
+		p, h1 {
+			color: white;
+		}
+	}
+	@media(min-width: 992px) and (max-width: 1300px) {
+		background-size: 60%, 70%;
+	}
+	@media(max-width: 992px) {
+		background-position-y: 50%, 100%;
+		background-position-x: 0%, 60%;
+		background-size: 0%, 150%;
+		.row {
+			padding: 50px 0px;
+		}
+	}
+  }
+  .blue-btn {
+	text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 36px;
+    border-radius: 120px;
+    font-weight: 900;
+    background-color: transparent;
+    color: black;
+    transition: --cblue 0.7s,--p 0.5s,--l 0.5s;
+    background: linear-gradient(90deg, var(--cblue) var(--p), #1AAAFF);
+    &:hover {
+	  transition: --cblue 0.7s,--p 0.5s,--l 0.5s;
+      cursor: pointer;
+      color: black !important;
+      --cblue:white;
+      --p:100%;
+      --l:100%;
+    }
   }
