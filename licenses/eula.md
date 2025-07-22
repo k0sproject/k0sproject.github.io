@@ -1,3 +1,5 @@
+<!-- Keeping this around for historical reasons. -->
+<!-- Older k0s releases are referencing this. -->
 # End-User License Agreement
 
 This End User License Agreement ("EULA") is a legal agreement between you and Mirantis, Inc. ("Mirantis"). It covers the terms and conditions for using k0s - Kubernetes distribution and any updates that may be made available from time to time as provided by Mirantis in binary or object code form ("Software"). The source code for Software is available at https://github.com/k0sproject/k0s under the Apache License, Version 2.0 (“Apache 2.0”). IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS EULA, DO NOT INSTALL, USE, OR COPY THE SOFTWARE.
